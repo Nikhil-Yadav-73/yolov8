@@ -1,0 +1,5 @@
+train: ./license_plates/images/train
+val: ./license_plates/images/val
+
+nc: 1
+names: ['license_plate']
