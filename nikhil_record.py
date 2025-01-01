@@ -5,13 +5,11 @@ import pytesseract
 import re
 from collections import defaultdict
 
-# Configure Tesseract OCR path
+
 pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
 
-# Load the YOLOv8 model
-model = YOLO(r'C:\Users\Nikhil\Desktop\video_ocr\runs\detect\train16\weights\best.pt')
+model = YOLO(r'/home/nikhil/Desktop/numplate/yolov8/runs/detect/train16/weights/best.pt')
 
-# Path to the recorded video file (change this to your video file path)
 video_file_path = r"C:\Users\Nikhil\Downloads\WhatsApp Video 2024-12-13 at 9.05.25 PM.mp4"
 
 # Open the video file

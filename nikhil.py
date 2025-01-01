@@ -9,7 +9,7 @@ from collections import defaultdict
 pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
 
 # Load the YOLOv8 model
-model = YOLO(r'C:\Users\Nikhil\Desktop\video_ocr\runs\detect\train16\weights\best.pt')
+model = YOLO(r'/home/nikhil/Desktop/numplate/yolov8/runs/detect/train16/weights/best.pt')
 
 # Define the live video feed URL
 video_url = "http://192.168.1.2:8080/video"
