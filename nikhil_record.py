@@ -6,11 +6,11 @@ import re
 from collections import defaultdict
 
 
-pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
+pytesseract.pytesseract.tesseract_cmd = r'/usr/bin/tesseract'
 
 model = YOLO(r'/home/nikhil/Desktop/numplate/yolov8/runs/detect/train16/weights/best.pt')
 
-video_file_path = r"C:\Users\Nikhil\Downloads\WhatsApp Video 2024-12-13 at 9.05.25 PM.mp4"
+video_file_path = r"/home/nikhil/Desktop/numplate/yolov8/vid1.mp4"
 
 # Open the video file
 cap = cv2.VideoCapture(video_file_path)
